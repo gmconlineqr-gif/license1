@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #000000;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    overflow-x: auto;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* FIXED PAGE WIDTH - NO RESPONSIVE WRAPPING */
+.page {
+    width: 850px;
+    min-width: 850px;
+    margin: 0;
+    padding: 30px 36px;
+}
+
+/* LOGO */
+.logo {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    display: block;
+    margin: 0 0 20px 0;
+}
+
+/* HEADING */
+h1 {
+    margin: 0 0 20px 0;
+    font-size: 38px;
+    line-height: 1.15;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* SUBTITLE */
+.subtitle {
+    margin: 0 0 28px 0;
+    font-size: 22px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+/* CONTACT */
+.contact {
+    margin-bottom: 28px;
+    font-size: 21px;
+    line-height: 1.3;
+    white-space: nowrap;
+}
+
+.contact div {
+    white-space: nowrap;
+}
+
+/* DETAILS */
+.details {
+    width: 100%;
+}
+
+/*
+   FIXED COLUMNS:
+   Label = 390px
+   Colon = 25px
+   Value = remaining space
+*/
+.row {
+    display: grid;
+    grid-template-columns: 390px 25px auto;
+    width: max-content;
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    line-height: 1.35;
+    white-space: nowrap;
+}
+
+.label {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.colon {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.value {
+    white-space: nowrap;
+}
+
+/* MOBILE - STILL FIXED WIDTH */
+@media (max-width: 600px) {
+
+    .page {
+        width: 850px;
+        min-width: 850px;
+        margin: 0;
+        padding: 28px 20px;
+    }
+
+    .logo {
+        width: 85px;
+        height: 85px;
+    }
+
+    h1 {
+        font-size: 38px;
+        white-space: nowrap;
+    }
+
+    .subtitle {
+        font-size: 22px;
+        white-space: nowrap;
+    }
+
+    .contact {
+        font-size: 21px;
+        white-space: nowrap;
+    }
+
+    .row {
+        grid-template-columns: 390px 25px auto;
+        width: max-content;
+        font-size: 21px;
+        white-space: nowrap;
+    }
+
+    .label,
+    .colon,
+    .value {
+        white-space: nowrap;
+    }
+}
